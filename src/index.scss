@@ -1,0 +1,63 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background:#012345;
+  display: flex;
+  justify-content: center;
+
+  #root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60vw;
+    min-width:500px;
+
+    .page-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width:100%;
+
+      .url-container{
+        width:100%;
+        font: 14px "Century Gothic", Futura, sans-serif;
+        padding:5px;
+      }
+
+      form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+
+        input{
+          font: 14px "Century Gothic", Futura, sans-serif;
+          padding:5px;
+          width:30%;
+          margin:0;
+        }
+
+        div{
+          display: flex;
+          justify-content: space-around;
+          width:100%;
+          padding:20px;
+
+          input{
+            height:fit-content;
+          }
+
+          .debug{
+            display: flex;
+            background: white;
+            width:350px;
+            height:200px;
+          }
+        }
+      }
+
+    }
+  }
+}

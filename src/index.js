@@ -1,12 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Square extends React.Component {
+  render() {
+    return (
+      <div class="page-container">
+        <input className="url-container" value="https://example.url/12313asdq3ec?q=123" disabled></input>
+        <form>
+          <div>
+            <input className="email-container" type="email" placeholder="Email"></input>
+            <div class="debug">
+              <p>123</p>
+            </div>
+          </div>
+          <div>
+            <input type="button" value="send"></input>
+            <input type="button" value="save"></input>
+          </div>
+        </form>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+      </div>
+    );
+  }
+}
+
+// ========================================
+
+ReactDOM.render(
+  <Square />,
+  document.getElementById('root')
+);
